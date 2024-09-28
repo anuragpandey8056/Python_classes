@@ -35,8 +35,8 @@
 # x=range(10,-1)
 # print(tuple(x))
 
-x=range(97,122,1)
-print(chr(x))
+# x=range(97,122,1)
+# print((x))
 
 
 
