@@ -190,4 +190,58 @@
 #     x=x+1
 
 
+# =================================================================FOR LOOP========================================================
+# x=int(input("enter a no"))
+# for i in range(1,x+1):
+#     if(i<x):
+#         print(i,end=(','))
+#     else:
+#         print(i)
+# even no upto====================================================
+# x=int(input("enter a no"))
+# for i in range(1,x+1):
+#     if i%2==0:
+#         if i<x-1:
+#           print(i,end=(','))
+#         else:
+#           print(i)
+# =====================================odd upto=====================
+# x=int(input("enter a no"))
+# for i in range(1,x+1):
+#     if i%2!=0:
+#         if i<x-1:
+#           print(i,end=(','))
+#         else:
+#           print(i)
+
+# ==============================n even no
+# x=int(input("enter a no"))
+# for i in range(1,(x*2)+1):
+#     if i%2==0:
+#         if i<(x*2)-1:
+#           print(i,end=(','))
+#         else:
+#           print(i)
+
+# ==============================n odd no==================================
+
+# x=int(input("enter a no"))
+# sum=0
+# for i in range(1,(x*2)+1):
+#     if i%2!=0:
+#         sum=sum+i
+#         if i<(x*2)-1:
+#           print(i,end=('+'))
+#         else:
+#           print(i,end="=")
+#           print(sum)
+
+# my_str=input("enter a name")
+# for i in  my_str:
+    
+
+
+   
+       
+    
     
