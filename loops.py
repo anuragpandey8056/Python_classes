@@ -239,6 +239,30 @@
 # my_str=input("enter a name")
 # for i in  my_str:
     
+# ====================== to check volwel consonent ==============================================================================
+# x=input("enter a name")
+# vol=cons=0
+# for i in x:
+#     if i in ('a','e','i','o','u','A','E','I','O','U'):
+#         vol=vol+1
+#     else:
+#         cons=cons+1
+# print(vol,cons)
+
+# ================================ to count the what we type count=============================================================
+x=input("enter a anything")
+alphabet=special=no=0
+for i in x:
+    y=ord(i)
+    if y>=65 and y<=90 or y>=97 and y<=122:
+        alphabet=alphabet+1
+    elif y>=48 and y<=57:
+        no=no+1
+    elif y>=32 and y<=47 or y>=58 and y<=64 or y>=91 and y<=96 or y>=123 and y<=126:
+        special=special+1
+print(alphabet,no,special)
+        
+
 
 
    
