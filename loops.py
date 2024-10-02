@@ -258,7 +258,7 @@ for i in x:
         alphabet=alphabet+1
     elif y>=48 and y<=57:
         no=no+1
-    elif y>=32 and y<=47 or y>=58 and y<=64 or y>=91 and y<=96 or y>=123 and y<=126:
+    else:
         special=special+1
 print(alphabet,no,special)
         
