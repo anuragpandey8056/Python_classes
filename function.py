@@ -66,7 +66,10 @@
 # print("len=",mylen1)
 
 
-# 3. Default argument
+# 3. Default argument#=========================================================================================
+
+
+
 # def mylen(x=0,y=0):
 #     print(x,y)
    
@@ -82,6 +85,129 @@
 # print("len1=",mylen1)
 # print("len2=",mylen2)
 # print("len3=",mylen3)
+# ============variable length argument(*args)===argument as a tuple=====================================================================================
+# def add(*n):
+#     print(n)
+#     print(type(n))
+#     sum=0
+#     for i in n:
+#         sum=sum+i
+#     print(sum)
+# add(10)
+# add(10,20,30,40)
+# add(50,10,2,0,40,50,30,80,700,10)
+# ===========================================================
+# def add(*n):
+#     print(n)
+#     print(type(n))
+#     global sum
+
+#     sum=0
+   
+#     for i in n:
+#         for x in i:
+#             sum=sum+x
+#     print(sum)
+# x=eval(input("enter any collection"))
+# add(x)
+# print(sum)
+
+# ========================================keyword variable length argument================================
+# def add(**n):
+#     print(n)
+#     print(type(n))
+#     for k,v in n.items():
+#         print(k,":",v)
+# add(name="anurag",age=97,qualify="btech")
+
+
+# ==============================================
+# def add(**n):
+#     print(n)
+#     print(type(n))
+#     for keys in n.items():
+#          print(keys)
+
+        
+# add(name="anurag",age=97,qualify="btech")
+
+
+
+# ================================================HIGHER ORDER FUNCTION==============================================
+# map
+# filter
+# reduce
+# lambda
+
+# ===================================================map()=====================================================================
+
+# def my_square(n):
+#     count=0
+#     if count>=3:
+#       count=count+1
+      
+      
+#       return n+5
+#     else:
+#         count=count+1
+#         return n+10
+    
+   
+
+   
+
+
+# my_list=[1,2,3,4,5]
+# x=map(my_square,my_list)
+# print(tuple(x))
+
+
+# def my_even(n):
+#     if n%2==0:
+#         return "even"
+#     else:
+#         return "odd"
+
+# my_list=[1,2,3,4,5]
+# x=map(my_even,my_list)
+# print(list(x))
+
+
+# ============================================filter==========================================
+
+# def my_even(n):
+#     if n%2==0:
+#         return n
+
+# my_list=[1,2,3,4,5]
+# x=filter(my_even,my_list)
+# print(list(x))
+
+
+# =========================================reduce============================================================
+import functools
+# my_list=[1,5,4,8,6]
+
+# def my_max(x,y):
+#     if x>y:
+#         return x
+#     else:
+#         return y
+
+# x= functools.reduce(my_max,my_list)
+# print(x)
+
+# =========================================================================================================
+# my_list=[1,5,4,8,6]
+
+# def my_max(x,y):
+
+#         return x+y
+   
+
+# x= functools.reduce(my_max,my_list)
+# print(x)
+
 
 
 
