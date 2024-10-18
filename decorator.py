@@ -17,8 +17,6 @@
 # x=var(p,q)
 # print(x)
 
-
-
 # =================================================================
 # def decor(fun):
 #     def inner(x,y):
@@ -37,22 +35,52 @@
 # x=addition(p,q)
 # print(x)
 # =============================================================
-def decor(fun):
-    def inner(x,y):
-        x=x*y
-        y=0
+# def decor(fun):
+#     def inner(x,y):
+#         x=x*y
+#         y=0
     
-        return fun(x,y)
-    return inner
-@decor                               # this is called decorator 
-def addition(x,y):
-    return x+y
+#         return fun(x,y)
+#     return inner
+# @decor                               # this is called decorator 
+# def addition(x,y):
+#     return x+y
 
-p = int (input("enter a no 1"))
-q=int(input("enter no 2"))
 
-x=addition(p,q)
-print(x)
+
+# p = int (input("enter a no 1"))
+# q=int(input("enter no 2"))
+
+# x=addition(p,q)
+# print(x)
+
+# ====================================================
+# def decor(fun,fun2):
+#     def inner(x,y):
+#         x=x*y
+#         y=0
+    
+#         return fun2(x,y),fun(x,y)
+        
+#     return inner
+# # this is called decorator
+# @decor
+# def addition(x,y):
+#     return x+y
+
+# @decor
+# def subtraction(x,y):
+#     return x-y
+
+# p = int (input("enter a no 1"))
+# q=int(input("enter no 2"))
+
+# x=addition(p,q)
+# print(x)
+# y=subtraction(p,q)
+# print(y)
+
+
 
 
 
